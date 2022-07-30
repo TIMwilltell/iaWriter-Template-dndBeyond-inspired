@@ -1,0 +1,182 @@
+:root {
+  --theme-page-bg-image-base: url(../assets/images/background_texture.png);
+  /* --theme-page-bg-image-1024: url(https://www.dndbeyond.com/attachments/2/253/int1k.jpg);*/
+ /*  --theme-page-bg-image-1921: url(https://www.dndbeyond.com/attachments/2/254/int2k.jpg);*/
+  /*  --theme-page-bg-image-2561: url(https://www.dndbeyond.com/attachments/2/255/int4k.jpg); */
+  --theme-quote-border: url(../assets/images/border_texture_wide.png);
+  --compendium-rules-sidebar-color: #c6cecf;
+  --compendium-rules-sidebar-links: #006530;
+  --compendium-quote-box-color: #e6e7e6;
+  --compendium-quote-box-border: #620000;
+  --compendium-quote-box-corner-filter: invert(5%) sepia(88%) saturate(6358%)
+    hue-rotate(25deg) brightness(105%) contrast(118%);
+  --h1-underline: #d1a347;
+  --h2-underline: #d1a347;
+  --h3-underline: #d1a347;
+  --link-color-base: #47D18C;
+  --link-color-monster: #bc0f0f;
+  --theme-table-row-bg-light: #f9f9fa;
+  --theme-table-row-bg-dark: #e0ebec;
+  --theme-table-row-bg-hover: #c8d5d6;
+  --descriptive-bg-color: #e6e7e6;
+}
+
+:root {
+  --font-family-base: "Roboto", "Helvetica", sans-serif;
+}
+
+table.table--generic-dice-first th:first-child,
+table.table--generic-dice-first td:first-child {
+  width: 12% !important;
+  font-weight: bold;
+}
+
+table.table--generic-dice-col2 th:nth-child(2),
+table.table--generic-dice-col2 td:nth-child(2) {
+  width: 12% !important;
+  font-weight: bold;
+}
+
+table a {
+  color: #0c9852 !important;
+}
+
+/* Custom statblock styling */
+.stat-block-background--air {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/howling-hatred-statblock.jpg);
+}
+
+.stat-block-background--earth {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/black-earth-statblock.jpg);
+}
+
+.stat-block-background--earth::before,
+.stat-block-background--earth::after {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/black-earth-statblock-scrollbar.jpg);
+  content: "";
+  background-size: 100% 100%;
+  background-position: center;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.stat-block-background--fire {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/eternal-flame-statblock.jpg);
+}
+
+.stat-block-background--fire::before,
+.stat-block-background--fire::after {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/eternal-flame-statblock-scrollbar.jpg);
+  content: "";
+  background-size: 100% 100%;
+  background-position: center;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.stat-block-background--water {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/crushing-wave-statblock.jpg);
+}
+
+.stat-block-background--water::before,
+.stat-block-background--water::after {
+  background-image: url(https://media.dndbeyond.com/compendium-images/pota/okk5TWo7npr7ygBf/crushing-wave-statblock-scrollbar.jpg);
+  content: "";
+  background-size: 100% 100%;
+  background-position: center;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+/*Quad flex layout - changes with screen size.*/
+div.quad-child a {
+  color: #18b767 !important;
+}
+
+.quad-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MEDIUM DEVICES */
+@media only screen and (min-width: 385px) {
+  .quad-wrap {
+    flex-direction: row;
+  }
+
+  .quad-parent {
+    flex: 1;
+  }
+}
+
+/* LARGE DEVICES */
+@media only screen and (min-width: 992px) {
+  .quad-parent {
+    display: flex;
+  }
+
+  .quad-child {
+    flex: 1;
+  }
+}
+
+.night-mode {
+  --color-bg-full: #000000;
+  --color-bg: hsl(40, 7%, 10%);
+  --color-bg-dark: hsl(40, 7%, 5%);
+  --color-border: rgb(73, 72, 70);
+  --color-fg-feather-inverse: rgba(0, 0, 0, 0.05);
+  --color-fg-feather: rgba(255, 255, 255, 0.05);
+  --color-fg-full-inverse: #000000;
+  --color-fg-full: #ffffff;
+  --color-fg-soft-inverse: rgba(0, 0, 0, 0.2);
+  --color-fg-soft: rgba(255, 255, 255, 0.2);
+  --color-fg-strong-inverse: rgba(0, 0, 0, 0.8);
+  --color-fg-strong: rgba(255, 255, 255, 0.8);
+  --color-fg: hsla(40, 7%, 90%, 0.95);
+  --opacity-dark: 0;
+  --opacity-light: 1;
+}
+
+:root {
+/** Font Sizes */
+/* --font-size-1: 0.65em;
+--font-size-2: clamp(0.65rem, 0.8vw, 0.75rem);
+--font-size-3: clamp(1rem, 1.1vw, 1.25rem);
+--font-size-4: clamp(1.25rem, 1.8vw, 2rem);
+--font-size-5: clamp(1.5rem, 22px, 3.25rem);
+--font-size-6: clamp(2.25rem, 12, 5.3rem);
+--font-size-7: clamp(3.3rem, 32px, 8.5rem);
+--font-size-8: clamp(4.5rem, 12.2vw, 13.87rem);
+--font-size-9: clamp(5.5rem, 28.7vw, 22.43rem); */
+--font-size-7: 32px;/* h1 */
+--font-size-6: 26px;/* h2 */
+--font-size-5: 22px;/* h3 */
+--font-size-4: 18px;/* h4 */
+--font-size-3: 16px;/* h5 */
+
+/** Font Weights */
+--font-weight-thin: 100;
+--font-weight-extra-light: 200;
+--font-weight-light: 300;
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+--font-weight-semi-bold: 600;
+--font-weight-bold: 700;
+--font-weight-extra-bold: 800;
+--font-weight-black: 900;
+
+
+
+ /** Line Heights */
+ --line-height-1: 41.6px;
+ /* --line-height-2: 1.6; */
+
+/* margin */
+--space-6: 6.5px;
+--space-9: 19.5px;
+--space-10: ;
+}
