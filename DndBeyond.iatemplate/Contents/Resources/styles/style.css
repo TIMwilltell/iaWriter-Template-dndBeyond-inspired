@@ -195,12 +195,12 @@ a:hover {
 }
 
 .monster {
-  color: var(--link-color-monster)l;
+  color: var(--link-color-monster) l;
 }
 
- a .monster {
-  color: seashell
- }
+a .monster {
+  color: seashell;
+}
 
 td:first-child {
   font-weight: var(--font-weight-bold);
@@ -230,6 +230,63 @@ th:first-child {
 
 tbody tr:nth-child(2n + 1) {
   background-color: var(--theme-table-row-bg-dark);
+}
+
+/* code */
+
+pre,
+code,
+kbd {
+  border-radius: 2px;
+  white-space: pre-wrap;
+  background-color: rgba(36, 36, 36, 0.055);
+}
+
+pre code {
+  background-color: transparent;
+}
+
+figure pre {
+  margin-top: 0;
+}
+
+pre {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+pre code {
+  padding: 0;
+}
+
+code,
+samp,
+kbd {
+  font-family: "iAWriterMono5", "Keyboard", monospace;
+  font-size: calc(
+    (15 / 19) * 1em
+  ); /* 0.7895em = 15px @ font-size: 19px (based on 12/16px @640 = 15.2px). Values for Serif (smallest), others need overrides */
+  font-weight: 400; /* Regular weight for non-Retina (@1x) */
+}
+
+/* Text weight for Retina (@2x) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), print {
+  code,
+  samp,
+  kbd {
+    font-weight: 450;
+  }
+}
+
+code,
+kbd {
+  padding: 0.08333em 0.1667em 0.1667em; /* ~1px 2px 2px when font-size: 12px, taking 1px border into account */
+}
+
+/* Prevent code line-height increasing heading line-height */
+:-webkit-any(h1, h2, h3, h4, h5, h6) > code,
+kbd {
+  line-height: normal;
 }
 
 .text--quote-box::after {
