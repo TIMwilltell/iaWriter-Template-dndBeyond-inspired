@@ -1,0 +1,275 @@
+<h1>Style Guide for DnD Beyond Template</h1>
+
+<p>This is a helpful little guide so you can see and know how to use this template for all your homebrew needs. </p>
+
+<h2>Markdown</h2>
+
+<p>Headings, paragraphs, bullets, numbering, and even tables are all use as normal. </p>
+
+<h3>Headings</h3>
+
+<pre><code># heading 1
+## heading 2
+### heading 3
+#### heading 4
+##### heading 5
+</code></pre>
+
+<h1>heading 1</h1>
+
+<h2>heading 2</h2>
+
+<h3>heading 3</h3>
+
+<h4>heading 4</h4>
+
+<h5>heading 5</h5>
+
+<h3>Lists</h3>
+
+<h4>Unordered</h4>
+
+<pre><code>* backpack
+* touch
+* shovel
+</code></pre>
+
+<p>Or</p>
+
+<pre><code>- bedroll
+- lamp
+- rope
+</code></pre>
+<div class="page-break" style="page-break-before: always;"></div>
+
+<ul>
+<li>backpack</li>
+<li>touch</li>
+<li>shovel</li>
+</ul>
+
+<p>Or</p>
+
+<ul>
+<li>bedroll</li>
+<li>lamp</li>
+<li>rope</li>
+</ul>
+
+<h4>Ordered</h4>
+
+<pre><code>1. Discover BBEG's plot
+2. Prepare to stop them
+3. ???
+4. Profit
+</code></pre>
+
+<ol>
+<li>Discover BBEG&#8217;s plot</li>
+<li>Prepare to stop them</li>
+<li>???</li>
+<li>Profit
+<div class="page-break" style="page-break-before: always;"></div></li>
+</ol>
+
+<h3>Table</h3>
+
+<pre><code>| Potion of...     | Rarity    | HP Regained |
+| :---             | :---:     | ---:        |
+| Healing          | Common    | 2d4 + 2     |
+| Greater Healing  | Uncommon  | 4d4 + 4     |
+| Superior Healing | Rare      | 8d4 + 8     |
+| Supreme Healing  | Very rare | 10d4 + 20   |
+</code></pre>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:right;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Potion of&#8230;</th>
+	<th style="text-align:center;">Rarity</th>
+	<th style="text-align:right;">HP Regained</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Healing</td>
+	<td style="text-align:center;">Common</td>
+	<td style="text-align:right;">2d4 + 2</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Greater Healing</td>
+	<td style="text-align:center;">Uncommon</td>
+	<td style="text-align:right;">4d4 + 4</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Superior Healing</td>
+	<td style="text-align:center;">Rare</td>
+	<td style="text-align:right;">8d4 + 8</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Supreme Healing</td>
+	<td style="text-align:center;">Very rare</td>
+	<td style="text-align:right;">10d4 + 20</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Links</h3>
+
+<h6>Wikilink</h6>
+
+<pre><code>If the characters don't approach the tower from the north skip to [[chapter 3]].
+</code></pre>
+
+<p>If the characters don&#8217;t make their approach to the tower from the north skip to <span class="wikilink" title="chapter 3">chapter 3</span>.</p>
+
+<h6>Monster Link</h6>
+
+<pre><code>As the characters approach the tower, three [cats](https://www.dndbeyond.com/monsters/cat) appear from behind a barrel.
+</code></pre>
+
+<p>As the characters approach the tower, three <a href="https://www.dndbeyond.com/monsters/cat">cats</a> appear from behind a barrel.</p>
+
+<h6>Magic Item</h6>
+
+<pre><code>*[immovable rod]: This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
+
+Never leave home without your [%magic-item][immovable rod](https://www.dndbeyond.com/magic-items/immovable-rod).
+</code></pre>
+
+<p>Never leave home without your <span class="magic-item"></span><a href="https://www.dndbeyond.com/magic-items/immovable-rod"><abbr title="This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.">immovable rod</abbr></a>.</p>
+
+<h6>Spell</h6>
+
+<pre><code>If a character cast [%spell][fireball](https://www.dndbeyond.com/spells/fireball), then the letter containing the cypher burns up completely.
+</code></pre>
+
+<p>If a character cast <span class="spell"></span><a href="https://www.dndbeyond.com/spells/fireball">fireball</a>, then the letter containing the cypher burns up completely. </p>
+
+<h2>Special Formatting</h2>
+
+<p>The special formatting uses iA Writer&#8217;s metadata tagging system and html with css classes to achieve the special text blocks. </p>
+
+<p>The metadata tags are put at the top of the document between triple dashes. I assign the variables to value of a <code>&lt;div&gt;</code> with an inline style with the class name of the special formatting. Because these are all div&#8217;s, they require a closing tag <code>&lt;/div&gt;</code>, that I set to <code>[%end]</code>.</p>
+
+<pre><code>---
+PCname: Orc Ick
+---
+You see, across the tavern, knocking back pint after pint of ale [%name].
+</code></pre>
+
+<p>You see, across the tavern, knocking back pint after pint of ale .</p>
+
+<h3>Read out Loud</h3>
+
+<p>The read out loud uses the <code>[%quote]</code> variable matched to <code>&lt;div class=&quot;text--quote-box&quot;&gt;</code>. </p>
+
+<pre><code>---
+quote:&lt;div class=&quot;text--quote-box&quot;&gt;
+end:&lt;/div&gt;
+---
+[%quote]
+As you approach the tower, you begin to notice the white stone is in fact not stone. This tower appears to be constructed from bone. From the bones of dead people. 
+[%end]
+</code></pre>
+
+<p>As you approach the tower, you begin to notice the white stone is in fact not stone. This tower appears to be constructed from bone. From the bones of dead people.
+</div></p>
+
+<h3>Rules Note</h3>
+
+<p>This special formatting requires some <em>extra</em> special markdown. Because I&#8217;m targeting the <code>p::first-child</code> you have to manually wrap the first line in the <code>&lt;p&gt;&lt;/p&gt;</code> element tags, and wrapping the other paragraphs here helps keep everything nice and tidy. ¯\_(ツ)_/¯</p>
+
+<pre><code>---
+note: &lt;div class=&quot;text--rules-sidebar&quot;&gt;
+---
+[%note]
+&lt;p&gt;
+Character Advancement
+&lt;/p&gt;
+&lt;p&gt;
+By the characters reach this section of this adventure, they should be at about 21st level. If they aren't then make sure the players have a back-up character ready to go. And maybe a back-up to the back-up just to be safe. I'm mean you don't really expect them to be able to defeat the **cat**.
+&lt;/p&gt;
+[%end]
+</code></pre>
+<div class="text--rules-sidebar">
+<p>
+Character Advancement
+</p>
+<p>
+By the characters reach this section of this adventure, they should be at about 21st level. If they aren&#8217;t then make sure the players have a back-up character ready to go. And maybe a back-up to the back-up just to be safe. I&#8217;m mean you don&#8217;t really expect them to be able to defeat the <strong>Elder Brain Cat</strong>.
+</p>
+</div>
+
+<h3>Epigraph (un-signed)</h3>
+
+<pre><code>---
+epigraph:&lt;div class=&quot;epigraph&quot;&gt;
+epigraph-author:&lt;div class=&quot;epigraph--with-author&quot;&gt;
+group-name: Mettle Sum
+BBEG: Elder Brain Cat, Ksam
+end:&lt;/div&gt;
+---
+[%epigraph-author]
+&lt;p&gt;
+Dear [%group-name],
+&lt;/p&gt;
+&lt;p&gt;
+It has come to my attention that you plan to interfere with the plans that I have so carefully crafted. I would advise you to not do this. The surgeon general has declared that doing so could be hazardous to your health. 
+&lt;/p&gt;
+&lt;p&gt;
+Sincerly,&lt;br /&gt;
+[%BBEG]
+&lt;/p&gt;
+[%end]
+</code></pre>
+<div class="epigraph">
+<p>
+Dear Elder Brain Cat, Ksam,
+</p>
+<p>
+It has been three months and we are just know learning that you have a needlessly silent &#8220;k&#8221; at the front of your name. This is the last straw. We could have maybe let the genocide slide, or the unbearable taxes on the already down-trodden, and even the outlawing of dogs and dog-like creatures. But we cannot stand idly by whilst a depraved creature such as yourself goes around calling itself &#8220;Ksam&#8221;. Prepare to die.
+</p>
+</div>
+
+<h3>Epigraph (Signed)</h3>
+
+<pre><code>---
+epigraph:&lt;div class=&quot;epigraph&quot;&gt;
+epigraph-author:&lt;div class=&quot;epigraph--with-author&quot;&gt;
+group-name: Mettle Sum
+BBEG: Elder Brain Cat, Ksam
+end:&lt;/div&gt;
+---
+[%epigraph-author]
+&lt;p&gt;
+Dear [%group-name],
+&lt;/p&gt;
+&lt;p&gt;
+It has come to my attention that you plan to interfere with the plans that I have so carefully crafted. I would advise you to not do this. The surgeon general has declared that doing so could be hazardous to your health. 
+&lt;/p&gt;
+&lt;p&gt;
+Sincerly,&lt;br /&gt;
+[%BBEG]b
+&lt;/p&gt;
+[%end]
+</code></pre>
+<div class="epigraph--with-author">
+<p>
+Dear Mettle Sum,
+</p>
+<p>
+It has come to my attention that you plan to interfere with the plans that I have so carefully crafted. I would advise you to not do this. The surgeon general has declared that doing so could be hazardous to your health.
+</p>
+<p>
+Sincerly,<br />
+Elder Brain Cat, Ksamb
+</p>
+</div>

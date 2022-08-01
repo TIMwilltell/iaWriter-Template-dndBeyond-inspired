@@ -10,7 +10,7 @@ Some of the text blocks such as tables, read-out-loud text, and rules sidebars r
 
 | Block | metadata variable | html |
 | :-- | :-- | :-- |
-| read-out-loud | `[%quote]` | <div class=">
+| read-out-loud | `[%quote]` | `<div class="text--quote-box">` |
 | rules aside | `[%note]` |
 | | |
 | | |
