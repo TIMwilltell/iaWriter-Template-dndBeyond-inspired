@@ -1,3 +1,9 @@
+---
+PCname: Orc Ick
+group-name: Mettle Sum
+BBEG: Elder Brain Cat, Ksam
+end: </div>
+---
 # Style Guide for DnD Beyond Template
 
 This is a helpful little guide so you can see and know how to use this template for all your homebrew needs. 
@@ -103,7 +109,7 @@ Or
 If the characters don't approach the tower from the north skip to [[chapter 3]].
 ```
 
-If the characters don't make their approach to the tower from the north skip to chapter 3.
+If the characters don't make their approach to the tower from the north skip to [[chapter 3]].
 
 ###### Monster Link
 
@@ -123,13 +129,13 @@ Never leave home without your [%magic-item][immovable rod](https://www.dndbeyond
 
 *[immovable rod]: This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
 
-Never leave home without your <span class="magic-item"></span>[immovable rod](https://www.dndbeyond.com/magic-items/immovable-rod).
+Never leave home without your [%magic-item][immovable rod](https://www.dndbeyond.com/magic-items/immovable-rod).
 
 ###### Spell
 
 	If a character cast [%spell][fireball](https://www.dndbeyond.com/spells/fireball), then the letter containing the cypher burns up completely.
 
-If a character cast <span class="spell"></span>[fireball](https://www.dndbeyond.com/spells/fireball), then the letter containing the cypher burns up completely. 
+If a character cast [%spell][fireball](https://www.dndbeyond.com/spells/fireball), then the letter containing the cypher burns up completely. 
 
 ## Special Formatting
 
@@ -144,9 +150,7 @@ PCname: Orc Ick
 You see, across the tavern, knocking back pint after pint of ale [%name].
 ```
 
-
-
- You see, across the tavern, knocking back pint after pint of ale .
+ You see, across the tavern, knocking back pint after pint of ale, [%PCname].
 
 ### Read out Loud
 The read out loud uses the `[%quote]` variable matched to `<div class="text--quote-box">`. 
@@ -165,9 +169,9 @@ As you approach the tower, you begin to notice the white stone is in fact not st
 
 
 
-
+[%quote]
 As you approach the tower, you begin to notice the white stone is in fact not stone. This tower appears to be constructed from bone. From the bones of dead people.
-</div>
+[%end]
 
 ### Rules Note
 
@@ -191,14 +195,14 @@ By the characters reach this section of this adventure, they should be at about 
 
 
 
-<div class="text--rules-sidebar">
+[%note]
 <p>
 Character Advancement
 </p>
 <p>
 By the characters reach this section of this adventure, they should be at about 21st level. If they aren't then make sure the players have a back-up character ready to go. And maybe a back-up to the back-up just to be safe. I'm mean you don't really expect them to be able to defeat the **Elder Brain Cat**.
 </p>
-</div>
+[%end]
 
 ### Epigraph (un-signed)
 
@@ -226,14 +230,14 @@ Sincerly,<br />
 [%end]
 ```
 
-<div class="epigraph">
+[%epigraph]
 <p>
-Dear Elder Brain Cat, Ksam,
+Dear [%BBEG],
 </p>
 <p>
 It has been three months and we are just know learning that you have a needlessly silent "k" at the front of your name. This is the last straw. We could have maybe let the genocide slide, or the unbearable taxes on the already down-trodden, and even the outlawing of dogs and dog-like creatures. But we cannot stand idly by whilst a depraved creature such as yourself goes around calling itself "Ksam". Prepare to die.
 </p>
-</div>
+[%end]
 
 ### Epigraph (Signed)
 
@@ -262,15 +266,15 @@ Sincerly,<br />
 
 
 
-<div class="epigraph--with-author">
+[%epigraph-author]
 <p>
-Dear Mettle Sum,
+Dear [%group-name],
 </p>
 <p>
 It has come to my attention that you plan to interfere with the plans that I have so carefully crafted. I would advise you to not do this. The surgeon general has declared that doing so could be hazardous to your health. 
 </p>
 <p>
 Sincerly,<br />
-Elder Brain Cat, Ksamb
+[%BBEG]b
 </p>
-</div>
+[%end]

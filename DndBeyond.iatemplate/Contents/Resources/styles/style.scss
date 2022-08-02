@@ -404,6 +404,32 @@ kbd {
   text-align: right;
 }
 
+epigraph-block {
+  display: block;
+  overflow: auto;
+  background: var(--theme-quote-bg-color, #fff);
+  color: var(--theme-quote-fg-color, #242527);
+  margin: 40px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  border: solid transparent;
+  border-width: 20px 10px;
+  border-image-source: var(--theme-quote-border,url(https://media.dndbeyond.com/ddb-compendium-client/5f1f1d66d16be68cf09d6ca172f8df92.png));
+  border-image-repeat: repeat;
+  border-image-slice: 20 10 20 10 fill;
+  padding: 10px;
+  position: relative;
+
+  &-signed {
+    @extend epigraph-block;
+    
+    :last-child { 
+      font-style: italic;
+      text-align: right;
+    }
+  }
+}
+
 .rules-text {
   overflow: auto;
   display: block;
